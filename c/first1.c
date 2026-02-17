@@ -383,16 +383,89 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// #include<stdio.h>
+// int main(){
+//     int a,i;
+//     a=10;
+//     for(i=0;i<=a;i++){
+//         if (i==7){
+//             continue;
+//         }
+//         printf("%d\n",i);
+        
+//     }
+//     return 0;
+// }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// //🚨🚨functions
+
+// #include <stdio.h>
+// int sum(int, int); // function prototype
+
+// int sum(int x, int y)
+// {
+//     printf("The sum is %d", x + y); // fucntion  defination
+//     return x + y;
+// }
+// int main()
+// {
+//     int a, b;
+//     a = 5;
+//     b = 10;
+//     sum(a, b);
+//     return 0;
+// }
+
+///////////////////////////////////////////////////
+
+// #include <stdio.h>
+// void good_morning();
+// void good_afternoon();
+// void good_night();
+
+// void good_morning(){
+//     printf("good morning\n");
+// }
+// void good_afternoon(){
+//     printf("good afternoon\n");
+// }
+// void good_night(){
+//     printf("good night\n");
+// }
+
+
+// int main(){
+//     good_morning();
+//     good_afternoon();
+//     good_night();
+//     return 0;
+// }
+
+
+
+///////////////////////////////////////////////////
+
 #include<stdio.h>
 int main(){
-    int a,i;
-    a=10;
-    for(i=0;i<=a;i++){
-        if (i==7){
-            continue;
-        }
-        printf("%d\n",i);
-        
-    }
+    
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
