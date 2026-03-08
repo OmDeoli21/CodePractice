@@ -5,7 +5,6 @@
 //     return 0;
 // }
 
-
 ////////////////////////////////////////////////////////////////////
 
 // #include <iostream>
@@ -34,7 +33,7 @@
 ////////////////////////////////////////////////////////////////////
 
 // /*      BOOLEAN      */
-// // 1  -  True 
+// // 1  -  True
 // // 0  -  False
 
 // #include<iostream>
@@ -58,7 +57,6 @@
 //     return 0;
 // }
 
-
 ///////////////////////////////////////////////////////////////////////////
 
 // /*          INPUT          */
@@ -74,5 +72,233 @@
 //     return 0;
 // }
 
+///////////////////////////////////
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int age;
+//     string name;
+//     int semester;
+//     float sgpa;
+//     cout << "Enter your age : ";
+//     cin >> age;
+//     cout << "Enter your name : ";
+//     cin >> name;
+//     cout << "Enter previous semester : ";
+//     cin >> semester;
+//     cout << "Enter your sgpa : ";
+//     cin >> sgpa;
+//     cout<<"\n";
+//     cout<<"User details: \n NAME:"<<name<<"\n AGE:"<<age<<"\n Semester:"<<semester<<"\n sgpa:"<<sgpa;
+//     return 0;
+// }
 
 /////////////////////////////////////////////////////////////////////////////
+
+// sum of 2 no.s
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int a,b;
+//     cout<<"enter the first number: ";
+//     cin>>a;
+//     cout<<"enter the second number: ";
+//     cin>>b;
+//     cout<<"\nTHE SUM IS = "<<a+b;
+
+//     return 0;
+// }
+
+////////////////////////////////////////////////////////////////////////////////
+
+/*[q]Find character is uppercase or lowercase*/
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     char input;
+//     cout<<"Enter a charcter :";
+//     cin>>input;
+//     if(input>='a' && input<='z'){
+//         cout<<"charcter is lowercase";
+//     }else if(input>='A' && input<='Z'){
+//         cout<<"charcter is UPPERCASE";
+//     }
+
+//     return 0;
+// }
+
+/*using ASCII value*/
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     char input;
+//     cout<<"Enter a charcter :";
+//     cin>>input;
+//     if(input>=65 && input<=90){
+//     cout<<"charcter is UPPPERCASE";
+//     }else{
+//         cout<<"charcter is lowercase";
+//     }
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*      TERNARY OPERATOR      */
+
+// //[q]find positive or negative integer
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a;
+//     cout<<"Enter a number: ";
+//     cin>>a;
+//     cout<< (a>0?"positive":"negative");
+//     return 0;
+// }
+
+////////////////////////////////////////////////////////////////////////////////////
+
+/*      while loop      */
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int count = 1;
+//     while(count<11){
+//         cout<<count<<" ";
+//         count++;
+//     }
+//     return 0;
+// }
+
+/*      for loop      */
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n = 21;
+//     for(int i = 1;i<n;i++){
+//         cout<<i<<" ";
+//     }
+//     return 0;
+// }
+
+/*      do-while loop      */
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n=10,i=1;
+//     do{
+//         cout<<i;
+//         cout<<" ";
+//         i++;
+//     }while(i<=n);
+
+//     return 0;
+// }
+
+///////////////////////////////////////////////////////////////////////////
+
+/*      [q1] sum of numbers from 1 to n     */
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n,sum=0;
+//     cout<<"Enter n: ";
+//     cin>>n;
+//     for(int i = 1; i<=n ;i++){
+//         sum=sum+i;
+//     }
+//     cout<<"The sum of numbers from 1 to n is = "<<sum;
+//     return 0;
+// }
+
+/*      [q2]Sum of all odd numbers from 1 to n        */
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n,sum=0;
+//     cout<<"enter n: ";
+//     cin>>n;
+//     for(int i = 1; i<=n ; i=i+2){
+//         sum=sum+i;
+//     }
+//     cout<<sum;
+//     return 0;
+// }
+
+/*      [q3]Check if a number is prime or not       */
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n, a;
+//     cout << "enter a number n : ";
+//     cin >> n;
+//     if (n < 2)
+//     {
+//         cout << "number is NOT prime";
+//         return 0;
+//     }
+//     for (int i = 2; i < n; i++)
+//     {
+//         a = n % i;
+//         if (a == 0)
+//         {
+//             cout << "number is NOT prime";
+//             return 0;
+//         }
+//     }
+//     cout << "Number is prime";
+//     return 0;
+// }
+
+// or
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int i, n;
+//     bool isPrime = true;
+//     cout << "enter a number n : ";
+//     cin >> n;
+//     if (n < 2)
+//     {
+//         cout << "number is NOT prime";
+//         return 0;
+//     }
+//         for (i = 2; i < n; i++)
+//         {
+//             if (n % i == 0)
+//             {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if (isPrime == true)
+//         {
+//             cout << "PRIME";
+//         }
+//         else
+//         {
+//             cout << "NOT prime";
+//         }
+
+//         return 0;
+//     }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
