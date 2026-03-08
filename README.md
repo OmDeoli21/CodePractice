@@ -1,4 +1,4 @@
-%% CodePractice %%
+# CodePractice 
 
 This repository contains my programming practice while learning the fundamentals of programming.
 
