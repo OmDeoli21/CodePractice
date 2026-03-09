@@ -336,21 +336,40 @@
 
 /*      {q}sum of all numbers from 1 to n which are divisible by 3         */
 
-#include <iostream>
-using namespace std;
-int main()
-{
-    int n,sum = 0;
-    cout << "Enter the number n: ";
-    cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-        if (i % 3 == 0)
-        {
-            sum += i;
-        }
-    }
-    cout<<"Sum = "<<sum;
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n,sum = 0;
+//     cout << "Enter the number n: ";
+//     cin >> n;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         if (i % 3 == 0)
+//         {
+//             sum += i;
+//         }
+//     }
+//     cout<<"Sum = "<<sum;
 
+//     return 0;
+// }
+
+
+/////////////////////////////////////////////////
+
+/*      {q}Print factorial of a number n             */
+
+#include<iostream>
+using namespace std;
+int main(){
+    int fact=1,n;
+    cout<<"Enter the number for which you need factorial= ";
+    cin>>n;
+    for(int i = 1; i<=n; i++){
+        fact*=i;
+        
+    }
+    cout<<"factorial of "<<n<<" = "<<fact;
     return 0;
 }
