@@ -298,8 +298,9 @@
 //         return 0;
 //     }
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*          PATTERN PRINTING          */
 
 // #include <iostream>
 // using namespace std;
@@ -307,27 +308,49 @@
 //     int n;
 //     cout<<"Enter the number of lines: ";
 //     cin>>n;
-//     for(int i=1;i<=n;i++){                                  
+//     for(int i=1;i<=n;i++){
 //         cout<<"* * * * * *"<<endl;
 //     }
 
 //     return 0;
 // }
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n,m;
+//     cout<<"Enter the number of lines : ";
+//     cin>>n;
+//     cout<<"Enter the number of stars in the line : ";
+//     cin>>m;
+//     for(int i = 1;i<=n;i++){
+//         for(int j = 1; j<=m ; j++){
+//             cout<<"* ";
+//         }
+//         cout<<"\n";
+//     }
+//     return 0;
+// }
+
+///////////////////////////////////////////
+
+/*      {q}sum of all numbers from 1 to n which are divisible by 3         */
+
+#include <iostream>
 using namespace std;
-int main(){
-    int n,m;
-    cout<<"Enter the number of lines : ";
-    cin>>n;
-    cout<<"Enter the number of stars in the line : ";
-    cin>>m;
-    for(int i = 1;i<=n;i++){
-        for(int j = 1; j<=m ; j++){
-            cout<<"* ";
+int main()
+{
+    int n,sum = 0;
+    cout << "Enter the number n: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 3 == 0)
+        {
+            sum += i;
         }
-        cout<<"\n";
     }
+    cout<<"Sum = "<<sum;
+
     return 0;
 }
-
