@@ -360,16 +360,145 @@
 
 /*      {q}Print factorial of a number n             */
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int fact=1,n;
+//     cout<<"Enter the number for which you need factorial= ";
+//     cin>>n;
+//     for(int i = 1; i<=n; i++){
+//         fact*=i;
+        
+//     }
+//     cout<<"factorial of "<<n<<" = "<<fact;
+//     return 0;
+// }
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*      q]PATTERN PRINTING             */
+
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n,m;
+//     cout<<"Enter number of lines: ";
+//     cin>>n;
+//     cout<<"Enter number of charcters in the line: ";
+//     cin>>m;
+//     for(int i=1; i<=n; i++){
+//         for(int j=1; j<=m; j++){
+//             cout<<j<<" ";
+//         }
+//         cout<<endl;
+//     }
+
+//     return 0;
+// }
+
+////////////////////////
+
+/*      q]cont. number pattern          */
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n,num=1;
+//     cout<<"ENter no. of line: "; 
+//     cin>>n;
+    
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<n; j++){
+//             cout<<num<<" ";
+//             num++;
+//         }
+//         cout<<endl;
+//     }
+
+//     return 0;
+// }
+
+////////////////////////
+
+/*character continous printing*/
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     char num=65;
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<n; j++){
+//             cout<<num<<" ";
+//             num++;
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+
+///////////////////////////////
+
+/*      q]Triangle pattern          */
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<i+1; j++){
+//             cout<<'*'<<" ";
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+ 
+
+///////////////////////////////////////
+
+
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n,num=1;
+//     cout<<"Enter number n: ";
+//     cin>>n;
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<i+1; j++){
+//             cout<<num<<" ";
+//         }
+//         cout<<endl;
+//         num++;
+//     }
+//     return 0;
+// }
+
+/////////////////////////
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    int fact=1,n;
-    cout<<"Enter the number for which you need factorial= ";
+    int n;
     cin>>n;
-    for(int i = 1; i<=n; i++){
-        fact*=i;
-        
+    char m = 'A';
+    for(int i=0; i<n; i++){
+        for(int j=0; j<i+1; j++){
+            cout<<m<<" ";
+
+        }
+        cout<<endl;
+        m++;
+
+
     }
-    cout<<"factorial of "<<n<<" = "<<fact;
     return 0;
 }
