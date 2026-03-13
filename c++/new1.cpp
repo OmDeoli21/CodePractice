@@ -463,6 +463,7 @@
 
 ///////////////////////////////////////
 
+/*Number triangle*/
 
 
 // #include <iostream>
@@ -483,22 +484,71 @@
 
 /////////////////////////
 
+/*letter triangle*/
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     char m = 'A';
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<i+1; j++){
+//             cout<<m<<" ";
+
+//         }
+//         cout<<endl;
+//         m++;
+
+
+//     }
+//     return 0;
+// }
+
+//////////////////
+
+/*
+1
+12
+123
+1234
+*/
+
+// //using 3loops
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<i+1; j++){
+//             for(int m=1;m<=i+1;m++){
+//                 cout<<m<<" ";
+            
+//             }
+//             cout<<endl;
+//             break;
+//         }
+//     }
+//     return 0;
+// }
+
+
+//using 2 loops
 
 #include<iostream>
 using namespace std;
 int main(){
     int n;
     cin>>n;
-    char m = 'A';
     for(int i=0; i<n; i++){
+        int num =1;
         for(int j=0; j<i+1; j++){
-            cout<<m<<" ";
-
+            cout<<num<<" ";
+            num++;
         }
+        
         cout<<endl;
-        m++;
-
-
     }
     return 0;
 }
