@@ -652,26 +652,54 @@
 
 ///////////////////////
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int n;
+//   cin>>n;
+//   char letter = 65;
+//   for(int i=0; i<n; i++){
+//     for(int j=0; j<n-i; j++){
+//       cout<<letter<<" ";
+//     }cout<<endl;
+//     letter++;
+//     for(int m=1; m<i+2; m++){
+//       cout<<"  ";
+//     }
+    
+//   }
+//   return 0;
+// }
+
+
+///////////////////////////////////////////
+
+/*    [Q] PYRAMID PATTERN
+    1
+  1 2 1
+1 2 3 2 1
+
+*/
+
 #include<iostream>
 using namespace std;
 int main(){
-  int n;
+  int n,num2;
   cin>>n;
-  char letter = 65;
   for(int i=0; i<n; i++){
-    for(int j=0; j<n-i; j++){
-      cout<<letter<<" ";
-    }cout<<endl;
-    letter++;
-    for(int m=1; m<i+2; m++){
+    for(int j=n-i; j>0;j--){                                    //gaps
       cout<<"  ";
     }
-    
+    for(int num=1; num<i+2;num++){                           //number left part
+      cout<<num<<" ";
+    } 
+    for(int k = i ;k > 0 ; k--){                        //number right part
+      cout << k << " ";
+    }
+
+    cout<<endl;
   }
+
   return 0;
 }
-
-
-
-
 
