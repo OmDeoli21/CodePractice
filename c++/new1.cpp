@@ -632,22 +632,46 @@
       4
 */
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int n,m,k;
+//   cin>>n;
+//   for(int i=0; i<n; i++){
+//     for(int j=0; j<n-i; j++){
+//       cout<<i+1<<" ";
+//     }
+//     cout<<endl;
+//     for(m=1; m<i+2 ;m++ ){
+//       cout<<"  ";
+//     }
+//   }
+//   return 0;
+// }
+
+
+///////////////////////
+
 #include<iostream>
 using namespace std;
 int main(){
-  int n,m,k;
+  int n;
   cin>>n;
+  char letter = 65;
   for(int i=0; i<n; i++){
     for(int j=0; j<n-i; j++){
-      cout<<i+1<<" ";
-    }
-    cout<<endl;
-    for(m=1; m<i+2 ;m++ ){
+      cout<<letter<<" ";
+    }cout<<endl;
+    letter++;
+    for(int m=1; m<i+2; m++){
       cout<<"  ";
     }
+    
   }
   return 0;
 }
+
+
 
 
 
