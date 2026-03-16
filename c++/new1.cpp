@@ -606,23 +606,48 @@
 
 
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int n;
+//   cin>>n;
+//   char letter = 65;
+//   for(int i=0; i<n; i++){
+//     for(int j=0; j<i+1; j++){
+//       cout<<letter<<" ";
+//       letter++;
+//     }
+//     cout<<endl;
+//   }
+//   return 0;
+// }
+
+  ////////////////////////////////////////////////////
+
+
+/*    [q]INverterd triangle pattern   
+1 1 1 1
+  2 2 2
+    3 3
+      4
+*/
+
+#include<iostream>
 using namespace std;
 int main(){
-  int n;
+  int n,m,k;
   cin>>n;
-  char letter = 65;
   for(int i=0; i<n; i++){
-    for(int j=0; j<i+1; j++){
-      cout<<letter<<" ";
-      letter++;
+    for(int j=0; j<n-i; j++){
+      cout<<i+1<<" ";
     }
     cout<<endl;
+    for(m=1; m<i+2 ;m++ ){
+      cout<<"  ";
+    }
   }
   return 0;
 }
-
-  ////////////////////////////////////////////////////
 
 
 
