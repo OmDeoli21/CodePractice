@@ -691,43 +691,90 @@
 
 /*        [q]hollow diamond         */
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//   int n = 4;
+//   //TOP
+//   for(int i=0; i<n; i++){
+
+//     for(int j=0; j<n-i-1; j++){                         //space1
+//       cout<<" ";
+//     }
+//     cout<<"*";                                     //star left
+
+//     if(i!= 0){
+//       for(int k=0; k<2*i-1; k++){               //space2<mid>
+//       cout<<" ";
+//     }
+//     cout<<"*";                                    //star right
+//   }
+//     cout<<endl;
+// }
+// //  BOTTOM
+// for(int i=0; i<n-1; i++){
+
+//   for(int j=0; j<i+1; j++){                     //space left bottom
+//     cout<<" ";
+//   }
+//   cout<<"*";                                       //star left bottom
+
+//   if(i!=n-2){
+//     for(int j=0; 2*(n-i)-5>j; j++){                     //space lowmid
+//     cout<<" ";
+//   }
+//   cout<<"*";
+//   }
+
+//   cout<<endl;
+// }
+// return 0;
+// }
+
+///////////////////////
+
+/*    [q]Butterfly pattern    */
+
 #include <iostream>
 using namespace std;
 int main()
 {
   int n = 4;
-  //TOP
-  for(int i=0; i<n; i++){
-    
-    for(int j=0; j<n-i-1; j++){                         //space1
-      cout<<" ";
+  //  TOP
+  for (int i = 1; i < n + 1; i++){
+    for (int j = 0; j < i; j++){
+      cout << "*";
     }
-    cout<<"*";                                     //star left
-    
-    if(i!= 0){
-      for(int k=0; k<2*i-1; k++){               //space2<mid>
-      cout<<" ";
+    for (int j = 0; j < n - i; j++){
+      cout << " ";
     }
-    cout<<"*";                                    //star right
+
+    for (int j = 0; j < n - i; j++){
+      cout << " ";
+    }
+    for (int j = 0; j < i; j++){
+      cout << "*";
+    }
+    cout << endl;
   }
+  
+  //BOTTOM
+  for(int i=0;i<n;i++){
+    for(int j=0; j<n-i;j++){
+      cout<<"*";
+    }
+    for(int j=0;j<i;j++){
+      cout<<" ";
+    }
+    for(int j=0;j<i;j++){
+      cout<<" ";
+    }
+    for(int j=0; j<n-i;j++){
+      cout<<"*";
+    }
     cout<<endl;
-}
-//  BOTTOM  
-for(int i=0; i<n-1; i++){
-  
-  for(int j=0; j<i+1; j++){                     //space left bottom
-    cout<<" ";
   }
-  cout<<"*";                                       //star left bottom
-  
-  if(i!=n-2){
-    for(int j=0; 2*(n-i)-5>j; j++){                     //space lowmid
-    cout<<" ";
-  }
-  cout<<"*";
-  }
-  
-  cout<<endl;
-}
-return 0;
+
+  return 0;
 }
