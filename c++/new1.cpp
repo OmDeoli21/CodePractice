@@ -355,7 +355,6 @@
 //     return 0;
 // }
 
-
 /////////////////////////////////////////////////
 
 /*      {q}Print factorial of a number n             */
@@ -368,18 +367,15 @@
 //     cin>>n;
 //     for(int i = 1; i<=n; i++){
 //         fact*=i;
-        
+
 //     }
 //     cout<<"factorial of "<<n<<" = "<<fact;
 //     return 0;
 // }
 
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*      q]PATTERN PRINTING             */
-
 
 // #include <iostream>
 // using namespace std;
@@ -407,9 +403,9 @@
 // using namespace std;
 // int main(){
 //     int n,num=1;
-//     cout<<"ENter no. of line: "; 
+//     cout<<"ENter no. of line: ";
 //     cin>>n;
-    
+
 //     for(int i=0; i<n; i++){
 //         for(int j=0; j<n; j++){
 //             cout<<num<<" ";
@@ -441,7 +437,6 @@
 //     return 0;
 // }
 
-
 ///////////////////////////////
 
 /*      q]Triangle pattern          */
@@ -459,12 +454,10 @@
 //     }
 //     return 0;
 // }
- 
 
 ///////////////////////////////////////
 
 /*Number triangle*/
-
 
 // #include <iostream>
 // using namespace std;
@@ -500,7 +493,6 @@
 //         cout<<endl;
 //         m++;
 
-
 //     }
 //     return 0;
 // }
@@ -524,7 +516,7 @@
 //         for(int j=0; j<i+1; j++){
 //             for(int m=1;m<=i+1;m++){
 //                 cout<<m<<" ";
-            
+
 //             }
 //             cout<<endl;
 //             break;
@@ -533,25 +525,23 @@
 //     return 0;
 // }
 
+// using 2 loops
+//  #include<iostream>
+//  using namespace std;
+//  int main(){
+//      int n;
+//      cin>>n;
+//      for(int i=0; i<n; i++){
+//          int num =1;
+//          for(int j=0; j<i+1; j++){
+//              cout<<num<<" ";
+//              num++;
+//          }
 
-//using 2 loops
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cin>>n;
-//     for(int i=0; i<n; i++){
-//         int num =1;
-//         for(int j=0; j<i+1; j++){
-//             cout<<num<<" ";
-//             num++;
-//         }
-        
 //         cout<<endl;
 //     }
 //     return 0;
 // }
-
 
 //////////////////////////
 
@@ -561,50 +551,47 @@
   3 2 1
   4 3 2 1*/
 
-  // #include<iostream>
-  // using namespace std;
-  // int main(){
-  //   int n;
-  //   cin>>n;
-  //   int num=n;
-  //   for(int i=0; i<n; i++){
-  //       for(int j=i+1; j>0; j--){
-  //         cout<<j<<" ";
-  //       }
-  //       cout<<endl;
-  //   }
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int n;
+//   cin>>n;
+//   int num=n;
+//   for(int i=0; i<n; i++){
+//       for(int j=i+1; j>0; j--){
+//         cout<<j<<" ";
+//       }
+//       cout<<endl;
+//   }
 
-  //   return 0;
-  // }
+//   return 0;
+// }
 
+//////////////
 
-  //////////////
+/*    FLOYD'S TRIANGLE
+1
+2 3
+4 5 6
+7 8 9 10
 
-  /*    FLOYD'S TRIANGLE  
-  1
-  2 3
-  4 5 6
-  7 8 9 10
-  
-  */
+*/
 
-  // #include<iostream>
-  // using namespace std;
-  // int main(){
-  //   int n,num = 1;
-  //   cin>>n;
-  //   for(int i=0; i<n; i++){
-  //     for(int j=0; j<i+1; j++){
-  //       cout<<num<<" ";
-  //       num++;
-  //     }
-  //     cout<<endl;
-  //   }
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int n,num = 1;
+//   cin>>n;
+//   for(int i=0; i<n; i++){
+//     for(int j=0; j<i+1; j++){
+//       cout<<num<<" ";
+//       num++;
+//     }
+//     cout<<endl;
+//   }
 
-  //   return 0;
-  // }
-
-
+//   return 0;
+// }
 
 // #include <iostream>
 // using namespace std;
@@ -622,10 +609,9 @@
 //   return 0;
 // }
 
-  ////////////////////////////////////////////////////
+////////////////////////////////////////////////////
 
-
-/*    [q]INverterd triangle pattern   
+/*    [q]INverterd triangle pattern
 1 1 1 1
   2 2 2
     3 3
@@ -649,7 +635,6 @@
 //   return 0;
 // }
 
-
 ///////////////////////
 
 // #include<iostream>
@@ -666,11 +651,10 @@
 //     for(int m=1; m<i+2; m++){
 //       cout<<"  ";
 //     }
-    
+
 //   }
 //   return 0;
 // }
-
 
 ///////////////////////////////////////////
 
@@ -681,25 +665,69 @@
 
 */
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int n,num2;
+//   cin>>n;
+//   for(int i=0; i<n; i++){
+//     for(int j=n-i; j>0;j--){                                    //gaps
+//       cout<<"  ";
+//     }
+//     for(int num=1; num<i+2;num++){                           //number left part
+//       cout<<num<<" ";
+//     }
+//     for(int k = i ;k > 0 ; k--){                        //number right part
+//       cout << k << " ";
+//     }
+
+//     cout<<endl;
+//   }
+
+//   return 0;
+// }
+
+///////////////////////////////////////
+
+/*        [q]hollow diamond         */
+
+#include <iostream>
 using namespace std;
-int main(){
-  int n,num2;
-  cin>>n;
+int main()
+{
+  int n = 4;
+  //TOP
   for(int i=0; i<n; i++){
-    for(int j=n-i; j>0;j--){                                    //gaps
-      cout<<"  ";
+    
+    for(int j=0; j<n-i-1; j++){                         //space1
+      cout<<" ";
     }
-    for(int num=1; num<i+2;num++){                           //number left part
-      cout<<num<<" ";
-    } 
-    for(int k = i ;k > 0 ; k--){                        //number right part
-      cout << k << " ";
+    cout<<"*";                                     //star left
+    
+    if(i!= 0){
+      for(int k=0; k<2*i-1; k++){               //space2<mid>
+      cout<<" ";
     }
-
-    cout<<endl;
+    cout<<"*";                                    //star right
   }
-
-  return 0;
+    cout<<endl;
 }
-
+//  BOTTOM  
+for(int i=0; i<n-1; i++){
+  
+  for(int j=0; j<i+1; j++){                     //space left bottom
+    cout<<" ";
+  }
+  cout<<"*";                                       //star left bottom
+  
+  if(i!=n-2){
+    for(int j=0; 2*(n-i)-5>j; j++){                     //space lowmid
+    cout<<" ";
+  }
+  cout<<"*";
+  }
+  
+  cout<<endl;
+}
+return 0;
+}
