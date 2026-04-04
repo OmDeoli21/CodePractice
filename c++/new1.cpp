@@ -927,28 +927,52 @@
 //////////////////////////////////////////////////////
 
 /*      [q]write a function to check whther a number is prime or not     */
+// #include<iostream>
+// using namespace std;
+// void primeYN(int x){
+//   if(x <= 1){
+//     cout << "Not a Prime Number";
+//     return;
+//   }
+//   for(int i=2;i<x;i++){
+//     if(x%i == 0){
+//       cout<<"Not a Prime Number.";
+//       return;
+//     }
+//     }
+//   cout<<"Prime number";
+//   }
+
+// int main(){
+//   primeYN(9);
+//   return 0;
+// }
+
+/////////////////////////////////////////////////////////
+
+/*      [q]print all the prime numbers between 2 and N      */
 #include<iostream>
 using namespace std;
-void primeYN(int x){
-  if(x <= 1){
-    cout << "Not a Prime Number";
-    return;
-  }
-  for(int i=2;i<x;i++){
-    if(x%i == 0){
-      cout<<"Not a Prime Number.";
-      return;
+void primenum(int x){
+  for(int i=2; i<x; i++){
+    bool isprime = true;
+    for(int j=2;j<i;j++){
+      if(i%j == 0){
+        isprime=false;
+        break;
+        }
+      }
+    if(isprime){
+      cout<<i<<" ";
     }
+    
+      }
     }
-  cout<<"Prime number";
-  }
 
 int main(){
-  primeYN(9);
+  primenum(16);
   return 0;
 }
-
-
 
 
 
