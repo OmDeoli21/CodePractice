@@ -881,19 +881,45 @@
 
 /*    [q]Calculate sum of digits of a number    */
 
+// #include<iostream>
+// using namespace std;
+// int sumofdigits(int x){
+//   int sum=0, lastd=0;
+//   while(x>0){
+//     lastd = x%10;
+//     x/=10;
+//     sum += lastd;
+//   }
+//   return sum;
+// }
+
+// int main(){
+//   cout<<"Sum of the digits = "<< sumofdigits(974);
+//   return 0;
+// }
+
+///////////////////////////////////////////////
+
+/*    [q]calculate binomial coefficient{nCr} for given n and r*/
+
+//nCr = n!/r!*(n-r)!
+
 #include<iostream>
 using namespace std;
-int sumofdigits(int x){
-  int sum=0, lastd=0;
-  while(x>0){
-    lastd = x%10;
-    x/=10;
-    sum += lastd;
+
+int factorial(int x){
+  int fact =1;
+  for(int i=1; i<=x; i++){
+    fact *= i;
   }
-  return sum;
+  return fact;
+}
+
+int BinomialCoeff(int n, int r){
+  return factorial(n)/(factorial(r)*factorial(n-r));
 }
 
 int main(){
-  cout<<"Sum of the digits = "<< sumofdigits(974);
+  cout << "Binomial coefficient = "<<BinomialCoeff(6,3);
   return 0;
 }
