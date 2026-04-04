@@ -904,22 +904,68 @@
 
 //nCr = n!/r!*(n-r)!
 
+// #include<iostream>
+// using namespace std;
+
+// int factorial(int x){
+//   int fact =1;
+//   for(int i=1; i<=x; i++){
+//     fact *= i;
+//   }
+//   return fact;
+// }
+
+// int BinomialCoeff(int n, int r){
+//   return factorial(n)/(factorial(r)*factorial(n-r));
+// }
+
+// int main(){
+//   cout << "Binomial coefficient = "<<BinomialCoeff(6,3);
+//   return 0;
+// }
+
+//////////////////////////////////////////////////////
+
+/*      [q]write a function to check whther a number is prime or not     */
 #include<iostream>
 using namespace std;
-
-int factorial(int x){
-  int fact =1;
-  for(int i=1; i<=x; i++){
-    fact *= i;
+void primeYN(int x){
+  if(x <= 1){
+    cout << "Not a Prime Number";
+    return;
   }
-  return fact;
-}
-
-int BinomialCoeff(int n, int r){
-  return factorial(n)/(factorial(r)*factorial(n-r));
-}
+  for(int i=2;i<x;i++){
+    if(x%i == 0){
+      cout<<"Not a Prime Number.";
+      return;
+    }
+    }
+  cout<<"Prime number";
+  }
 
 int main(){
-  cout << "Binomial coefficient = "<<BinomialCoeff(6,3);
+  primeYN(9);
   return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
