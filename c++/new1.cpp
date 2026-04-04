@@ -736,45 +736,164 @@
 
 /*    [q]Butterfly pattern    */
 
-#include <iostream>
-using namespace std;
-int main()
-{
-  int n = 4;
-  //  TOP
-  for (int i = 1; i < n + 1; i++){
-    for (int j = 0; j < i; j++){
-      cout << "*";
-    }
-    for (int j = 0; j < n - i; j++){
-      cout << " ";
-    }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//   int n = 4;
+//   //  TOP
+//   for (int i = 1; i < n + 1; i++){
+//     for (int j = 0; j < i; j++){
+//       cout << "*";
+//     }
+//     for (int j = 0; j < n - i; j++){
+//       cout << " ";
+//     }
 
-    for (int j = 0; j < n - i; j++){
-      cout << " ";
-    }
-    for (int j = 0; j < i; j++){
-      cout << "*";
-    }
-    cout << endl;
-  }
+//     for (int j = 0; j < n - i; j++){
+//       cout << " ";
+//     }
+//     for (int j = 0; j < i; j++){
+//       cout << "*";
+//     }
+//     cout << endl;
+//   }
   
-  //BOTTOM
-  for(int i=0;i<n;i++){
-    for(int j=0; j<n-i;j++){
-      cout<<"*";
-    }
-    for(int j=0;j<i;j++){
-      cout<<" ";
-    }
-    for(int j=0;j<i;j++){
-      cout<<" ";
-    }
-    for(int j=0; j<n-i;j++){
-      cout<<"*";
-    }
-    cout<<endl;
-  }
+//   //BOTTOM
+//   for(int i=0;i<n;i++){
+//     for(int j=0; j<n-i;j++){
+//       cout<<"*";
+//     }
+//     for(int j=0;j<i;j++){
+//       cout<<" ";
+//     }
+//     for(int j=0;j<i;j++){
+//       cout<<" ";
+//     }
+//     for(int j=0; j<n-i;j++){
+//       cout<<"*";
+//     }
+//     cout<<endl;
+//   }
 
+//   return 0;
+// }
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/*                     FUNCTIONS                         */
+
+// #include<iostream>
+// using namespace std;
+
+// void hello(){
+//   cout<<"Hello";
+// }
+
+// int main(){
+//   hello();                  //function call
+//   return 0;
+// }
+
+
+//////////////////////////////////////
+/*  Sum of two numbers  */
+/*  Minimum of two numbers  */
+
+// #include<iostream>
+// using namespace std;
+// int sum(int a,int b){
+//   int s = a+b;
+//   return s;
+// }
+// int min(int a,int b){
+//   if(a>b){
+//     return b;
+//   }else if(b>a){
+//     return a;
+//   }else{
+//     cout<<"equal numbers \n";
+//     return 0;
+//   }
+// }
+
+// int main(){
+//   cout<<min(12,21);
+//   return 0;
+// }
+
+
+/////////////////////////////////////
+
+/*    [q]Calculate sum of numbers from 1 to N   */
+
+// #include<iostream>
+// using namespace std;
+// int sumN(int N){
+//   int sum = 0;
+//   for(int i =1; i<=N; i++){
+//     sum += i;
+//   }
+//   return sum;
+// }
+
+// int main(){
+//   cout<<"Sum = "<< sumN(10);
+//   return 0;
+// }
+
+/*without loops*/
+
+// #include<iostream>
+// using namespace std;
+// int sumN(int N){
+//   int s = N*(N+1)/2;                //Using Arithmetic progression
+//   return s;
+// }
+
+// int main(){
+//   cout<<"Sum = "<<sumN(10);
+//   return 0;
+// }
+
+////////////////////////////
+
+/*    [q]Calculate N factorial   */
+
+// #include<iostream>
+// using namespace std;
+// int factN(int N){
+//   int fact = 1;
+//   for(int i=1; i<=N; i++){
+//     fact*=i;
+//   }
+//   return fact;
+// }
+
+// int main(){
+//   cout<<"Factorial = "<<factN(6);
+//   return 0;
+// }
+
+///////////////////////////////////////////
+
+/*    [q]Calculate sum of digits of a number    */
+
+#include<iostream>
+using namespace std;
+int sumofdigits(int x){
+  int sum=0, lastd=0;
+  while(x>0){
+    lastd = x%10;
+    x/=10;
+    sum += lastd;
+  }
+  return sum;
+}
+
+int main(){
+  cout<<"Sum of the digits = "<< sumofdigits(974);
   return 0;
 }
