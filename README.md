@@ -17,6 +17,8 @@ This repository contains my programming practice while learning the fundamentals
 * Prime number
 * Factorial
 * Pattern printing
+* functions
+* arrays
 
 ## Purpose
 
@@ -26,4 +28,4 @@ This repository contains my programming practice while learning the fundamentals
 
 ## Future Plans
 
-I will continue adding more programs as I learn new topics such as arrays, functions, pointers, and data structures.
+I will continue adding more programs as I learn new topics such as pointers, and data structures.
